@@ -1,6 +1,6 @@
 {
   "name": "git-commit",
   "version": "0.1.0",
-  "description": "Automatise les commits Git en suivant la convention Angular.",
+  "description": "Gemini CLI extension to automate Git commits following the Angular convention.",
   "contextFileName": "GEMINI.md"
 }
