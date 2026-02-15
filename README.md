@@ -1,45 +1,48 @@
-# Extension Gemini CLI : git-commit
+# Gemini CLI Extension: git-commit
 
-Cette extension pour le Gemini CLI automatise la création de messages de commit en suivant la convention [Angular](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
+This Gemini CLI extension automates the creation of commit messages following the [Angular convention](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
 
-## Fonctionnalités
+## Features
 
-- **Analyse automatique** : Analyse le `diff` des fichiers modifiés pour comprendre les changements.
-- **Conformité Angular** : Génère des messages au format `<type>(<scope>): <description>`.
-- **Automatisation Git** : Exécute automatiquement `git add` et `git commit` pour vous.
-- **Gestion intelligente** : Capable de séparer les changements en plusieurs commits si nécessaire.
+- **Automatic Analysis**: Analyzes the `diff` of modified files to understand changes.
+- **Angular Compliance**: Generates messages in the format `<type>(<scope>): <description>`.
+- **Git Automation**: Automatically executes `git add` and `git commit` for you.
+- **Smart Management**: Capable of splitting changes into multiple commits if necessary.
 
 ## Installation
 
-### Installation locale
+### Local Installation
 
-Si vous avez cloné ce dépôt, vous pouvez installer l'extension localement :
+If you have cloned this repository, you can install the extension locally:
 
 ```bash
 gemini extension install --local .
 ```
 
-### Installation depuis GitHub
+### Installation from GitHub
 
-Vous pouvez installer l'extension directement depuis le dépôt distant :
+You can install the extension directly from the remote repository:
 
 ```bash
 gemini extension install github:q-sw/git-commit
 ```
 
-## Utilisation
+## Usage
 
-Une fois installée, vous pouvez utiliser la commande suivante dans n'importe quel dépôt Git :
+Once installed, you can use the following command in any Git repository:
 
 ```bash
 /git-commit
 ```
 
-L'assistant analysera vos changements non commités, vous proposera un message
-et effectuera le commit si vous validez (ou automatiquement selon sa configuration).
+The assistant will analyze your uncommitted changes, suggest a message, and perform the commit if you validate (or automatically depending on its configuration).
 
-## Structure des fichiers
+## File Structure
 
-- `gemini-extension.json` : Fichier de configuration de l'extension.
-- `commands/git-commit.toml` : Définition de la commande et du prompt de l'agent.
-- `GEMINI.md` : (Optionnel) Fichier de contexte spécifique pour l'extension.
+- `gemini-extension.json`: Extension configuration file.
+- `commands/git-commit.toml`: Command definition and agent prompt.
+- `GEMINI.md`: (Optional) Specific context file for the extension.
+
+---
+
+[Version française (README.fr.md)](./README.fr.md)
